@@ -3,52 +3,161 @@
     --aniOut: .9s;
     --aniMid: 3s;
 }
+
 body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#fundo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    left: -50px;
+    top: -50px;
+    background-image: url("https://static-cdn.jtvnw.net/jtv_user_pictures/b6ee6b06-f8e4-48e4-a0ef-d89da0672a02-profile_banner-480.png");
+    filter: blur(40px);
+    background-size: cover;
+    background-position: center;
+}
+
+#conteiner {
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#componets {
+    background-color: #09131CCC;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+
+#login-box{
+    display: inline-table;
+    padding: 4px 40px 4px 40px;
+    border-radius: 10px;
+    transition: background-color .1s ease-in-out ;
+    background-color: #941a80;
+    margin-bottom: 10px;
+}   
+#login-box:hover{
+    background-color: #661659;
+}
+#login-box:link{
+    text-decoration: none;
+}
+
+
+#twitch-text{
+    color: #fff;
+    margin-left: 7px;
+    margin-right: 11px;
+    font-size: 24px;
+    font-family: Lato;
+    font-weight: 300;
+}
+
+#description-box{
+    padding-bottom: 10px;
+}
+
+
+#text{
+    color: #fff;
+    font-size: 36px;
+    font-family: Lato;
+    font-weight: 300;
+}
+
+#description{
+    color: #fff;
+    font-size: 16pxpx;
+    font-family: Lato;
+    font-weight: 300;
+    white-space: pre-line;
+}
+
+#title{
+    color: #fff;
+    font-size: 40px;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+
+
+
+#twitch-logo{
+    float: left;
+    position: relative;
+    top: 2px;
+    height: 27px;
+}
+
+#animation {
     position: fixed;
     top: 50%;
-    left: 100%;
-    transform: translate(-100%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: -30px;
     text-align: center;
     font-family: Lato;
     font-weight: bold;
 }
 
-.anchorAni {
-    animation: posIn var(--aniIn) ease-in-out forwards,
-    posOut var(--aniOut) ease-in-out var(--aniMid) forwards;
+.anchorAniIn {
+    animation: posIn var(--aniIn) ease-in-out forwards;
 }
 
-.rotationAni{
+.rotationAniIn {
     animation: rotIn var(--aniIn) ease-in-out forwards;
 }
 
-.scaleAni{
-    animation: staIn var(--aniIn) ease-in-out forwards,
-    staOut var(--aniOut) ease-in-out var(--aniMid) forwards;
+.scaleAniIn {
+    animation: staIn var(--aniIn) ease-in-out forwards;
 }
 
-.boxAni{
-    animation: boxIn var(--aniIn) ease-in-out forwards,
-            boxOut var(--aniOut) ease-in-out var(--aniMid) forwards;
+.boxAniIn {
+    animation: boxIn var(--aniIn) ease-in-out forwards;
+}
+
+.anchorAniOut {
+    animation: posOut var(--aniOut) ease-in-out forwards;
+}
+
+.scaleAniOut {
+    animation: staOut var(--aniOut) ease-in-out forwards;
+}
+
+.boxAniOut {
+    animation: boxOut var(--aniOut) ease-in-out forwards;
 }
 
 #img {
     width: 100px;
     height: auto;
 }
+
 #box {
     z-index: -1;
     position: relative;
-    top: -25px; /* -40 */
+    top: -25px;
+    /* -40 */
     color: white;
     border-radius: 15px;
     padding: 20px;
     margin: 0px;
     background-color: #09131C;
     transform-origin: top;
-    
 }
+
 #nome {
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -58,6 +167,7 @@ body {
     line-height: 28px;
     white-space: nowrap;
 }
+
 #acao {
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -106,7 +216,6 @@ body {
     29% {
         transform: scale(1);
     }
-    
 }
 
 @keyframes boxIn {
@@ -123,6 +232,7 @@ body {
         transform: scale(1);
     }
 }
+
 @keyframes posOut {
     84% {
         transform: translate(0px, 0px);
@@ -138,9 +248,7 @@ body {
     }
 }
 
-@keyframes rotOut {
-
-}
+@keyframes rotOut {}
 
 @keyframes staOut {
     75% {
@@ -152,7 +260,6 @@ body {
 }
 
 @keyframes boxOut {
-
     56% {
         transform: scaleX(1) scaleY(1);
     }
