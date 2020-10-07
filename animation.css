@@ -1,0 +1,162 @@
+:root {
+    --aniIn: 1.8s;
+    --aniOut: .9s;
+    --aniMid: 3s;
+}
+body {
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+    margin: -30px;
+    text-align: center;
+    font-family: Lato;
+    font-weight: bold;
+}
+
+.anchorAni {
+    animation: posIn var(--aniIn) ease-in-out forwards,
+    posOut var(--aniOut) ease-in-out var(--aniMid) forwards;
+}
+
+.rotationAni{
+    animation: rotIn var(--aniIn) ease-in-out forwards;
+}
+
+.scaleAni{
+    animation: staIn var(--aniIn) ease-in-out forwards,
+    staOut var(--aniOut) ease-in-out var(--aniMid) forwards;
+}
+
+.boxAni{
+    animation: boxIn var(--aniIn) ease-in-out forwards,
+            boxOut var(--aniOut) ease-in-out var(--aniMid) forwards;
+}
+
+#img {
+    width: 100px;
+    height: auto;
+}
+#box {
+    z-index: -1;
+    position: relative;
+    top: -25px; /* -40 */
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0px;
+    background-color: #09131C;
+    transform-origin: top;
+    
+}
+#nome {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    font-size: 40px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+#acao {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    font-size: 25px;
+    line-height: 20px;
+    margin-top: 8px;
+    white-space: nowrap;
+}
+
+@keyframes posIn {
+    0% {
+        transform: translate(0px, 300px);
+    }
+    25% {
+        transform: translate(0px, -100px);
+    }
+    48% {
+        transform: translate(0px, 20px);
+    }
+    77% {
+        transform: translate(0px, -5px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes rotIn {
+    0% {
+        transform: rotate(20deg);
+    }
+    35% {
+        transform: rotate(-15deg);
+    }
+    45% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes staIn {
+    0% {
+        transform: scale(0.2);
+    }
+    29% {
+        transform: scale(1);
+    }
+    
+}
+
+@keyframes boxIn {
+    0% {
+        transform: scale(0);
+    }
+    35% {
+        transform: scale(0);
+    }
+    48% {
+        transform: scale(1.1);
+    }
+    58% {
+        transform: scale(1);
+    }
+}
+@keyframes posOut {
+    84% {
+        transform: translate(0px, 0px);
+    }
+    37% {
+        transform: translate(0px, 20px);
+    }
+    75% {
+        transform: translate(0px, -60px);
+    }
+    100% {
+        transform: translate(0px, 300px);
+    }
+}
+
+@keyframes rotOut {
+
+}
+
+@keyframes staOut {
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes boxOut {
+
+    56% {
+        transform: scaleX(1) scaleY(1);
+    }
+    100% {
+        transform: scaleX(0) scaleY(.6);
+    }
+}
