@@ -5,8 +5,8 @@ audio.volume= .3;
 
 var twitchOAuthToken =null;
 var channelId=null;
-var clientId = 'nwzemcq0g8agkgz8dei6xb5277jlmz'; 
-var redirectURI = 'http://127.0.0.1:5500/index.html';
+var clientId = 'apprklrt7e4tasfoq8rjonw99edjxu'; 
+var redirectURI = 'https://dx3006.github.io/DXPN/';
 var scope = 'channel_read channel:read:redemptions';
 var ws;
 listaPedidos=[]
