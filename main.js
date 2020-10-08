@@ -1,7 +1,7 @@
 
 var tempoAniPadrao=2000;
 var audio = new Audio("audio.mp3");
-audio.volume= .3;
+audio.volume= .5;
 
 var twitchOAuthToken =null;
 var channelId=null;
@@ -111,8 +111,6 @@ function playAnimation(direc){
     
     document.getElementById("anchor").removeAttribute("style")
     document.getElementById("anchor").removeAttribute("class")
-    document.getElementById("img").removeAttribute("class")
-    document.getElementById("scale").removeAttribute("class")
     document.getElementById("box").removeAttribute("class")
 
     void  document.getElementById("box").offsetWidth;
@@ -120,13 +118,10 @@ function playAnimation(direc){
     if(direc==0){
         /* console.log("play in"); */
         document.getElementById("anchor").classList.add("anchorAniIn")
-        document.getElementById("img").classList.add("rotationAniIn")
-        document.getElementById("scale").classList.add("scaleAniIn")
         document.getElementById("box").classList.add("boxAniIn")
     }else{
         /* console.log("play out"); */
         document.getElementById("anchor").classList.add("anchorAniOut")
-        document.getElementById("scale").classList.add("scaleAniOut")
         document.getElementById("box").classList.add("boxAniOut")
     }
     
@@ -142,12 +137,28 @@ async function lista(){
     while(true){
         /* console.log("rodou"); */
         if( listaPedidos.length>0 ){
-            sleepT=tempoAniPadrao+1800;
+            sleepT=tempoAniPadrao+1200;
             playAni=false
 
             j=listaPedidos[0];
             listaPedidos.shift()
             /* console.log("entrou na lista"); */
+
+
+
+
+            hex=j["data"]["redemption"]["reward"]["background_color"]
+            gray=parseInt(hex.substring(1,3),16)*0.2126+parseInt(hex.substring(3,5),16)*0.7152+parseInt(hex.substring(5,7),16)*0.0722
+            
+            document.getElementById("box").style.backgroundColor=hex;
+            if(gray>127){
+                document.getElementById("nome").style.color="#112"
+                document.getElementById("acao").style.color="#112"
+            }else{
+                document.getElementById("nome").style.color="#fff"
+                document.getElementById("acao").style.color="#fff"
+            }
+
 
             document.getElementById("nome").innerHTML = j["data"]["redemption"]["user"]["display_name"]
 
@@ -163,7 +174,7 @@ async function lista(){
 
 
             if(audio.duration>sleepT){
-                sleepT=audio.duration*1000-1000
+                sleepT=audio.duration*1000-700
             }
             audio.play()
             playAnimation(0);

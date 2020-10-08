@@ -1,6 +1,6 @@
 :root {
-    --aniIn: 1.8s;
-    --aniOut: .9s;
+    --aniIn: 1.2s;
+    --aniOut: .6s;
     --aniMid: 3s;
 }
 
@@ -13,9 +13,9 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    padding: 50px;
-    left: -50px;
-    top: -50px;
+    padding: 60px;
+    left: -60px;
+    top: -60px;
     background-image: url("https://static-cdn.jtvnw.net/jtv_user_pictures/b6ee6b06-f8e4-48e4-a0ef-d89da0672a02-profile_banner-480.png");
     filter: blur(40px);
     background-size: cover;
@@ -101,68 +101,38 @@ body {
     height: 27px;
 }
 
+
+
 #animation {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: -30px;
     text-align: center;
     font-family: Lato;
     font-weight: bold;
 }
 
-.anchorAniIn {
-    animation: posIn var(--aniIn) ease-in-out forwards;
-}
-
-.rotationAniIn {
-    animation: rotIn var(--aniIn) ease-in-out forwards;
-}
-
-.scaleAniIn {
-    animation: staIn var(--aniIn) ease-in-out forwards;
-}
-
-.boxAniIn {
-    animation: boxIn var(--aniIn) ease-in-out forwards;
-}
-
-.anchorAniOut {
-    animation: posOut var(--aniOut) ease-in-out forwards;
-}
-
-.scaleAniOut {
-    animation: staOut var(--aniOut) ease-in-out forwards;
-}
-
-.boxAniOut {
-    animation: boxOut var(--aniOut) ease-in-out forwards;
-}
-
 #img {
+  position:relative;
     width: 100px;
     height: auto;
 }
 
 #box {
     z-index: -1;
-    position: relative;
-    top: -25px;
     /* -40 */
     color: white;
     border-radius: 15px;
     padding: 20px;
+    padding-top:5px;
     margin: 0px;
     background-color: #09131C;
     transform-origin: top;
 }
 
 #nome {
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
+    margin: 0px;
     font-size: 40px;
     line-height: 28px;
     white-space: nowrap;
@@ -177,6 +147,22 @@ body {
     line-height: 20px;
     margin-top: 8px;
     white-space: nowrap;
+}
+
+
+.anchorAniIn {
+    animation: posIn var(--aniIn) ease-in-out forwards;
+}
+
+.boxAniIn {
+    animation: boxIn var(--aniIn) ease-in-out forwards;
+}
+.anchorAniOut {
+    animation: posOut var(--aniOut) ease-in-out forwards;
+}
+
+.boxAniOut {
+    animation: boxOut var(--aniOut) ease-in-out forwards;
 }
 
 @keyframes posIn {
@@ -197,38 +183,11 @@ body {
     }
 }
 
-@keyframes rotIn {
-    0% {
-        transform: rotate(20deg);
-    }
-    35% {
-        transform: rotate(-15deg);
-    }
-    45% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes staIn {
-    0% {
-        transform: scale(0.2);
-    }
-    29% {
-        transform: scale(1);
-    }
-}
-
 @keyframes boxIn {
     0% {
         transform: scale(0);
     }
-    35% {
-        transform: scale(0);
-    }
-    48% {
-        transform: scale(1.1);
-    }
-    58% {
+    20% {
         transform: scale(1);
     }
 }
@@ -245,17 +204,6 @@ body {
     }
     100% {
         transform: translate(0px, 300px);
-    }
-}
-
-@keyframes rotOut {}
-
-@keyframes staOut {
-    75% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
     }
 }
 
