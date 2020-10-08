@@ -149,7 +149,7 @@ async function lista(){
 
             hex=j["data"]["redemption"]["reward"]["background_color"]
             gray=parseInt(hex.substring(1,3),16)*0.2126+parseInt(hex.substring(3,5),16)*0.7152+parseInt(hex.substring(5,7),16)*0.0722
-            
+            console.log(gray)
             document.getElementById("box").style.backgroundColor=hex;
             if(gray>127){
                 document.getElementById("nome").style.color="#112"

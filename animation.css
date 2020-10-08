@@ -4,38 +4,87 @@
     --aniMid: 3s;
 }
 
+
 body {
     margin: 0px;
-    overflow: hidden;
+    
 }
 
-#fundo {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding: 60px;
-    left: -60px;
-    top: -60px;
-    background-image: url("https://static-cdn.jtvnw.net/jtv_user_pictures/b6ee6b06-f8e4-48e4-a0ef-d89da0672a02-profile_banner-480.png");
-    filter: blur(40px);
+
+#logo{
+    height: 250px;
+}
+#login {
+    text-align: center;
+    min-height: 100%;
+    height: auto;
+    background-color: blueviolet;
+    background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/b6ee6b06-f8e4-48e4-a0ef-d89da0672a02-profile_banner-480.png);
     background-size: cover;
     background-position: center;
 }
 
+#cont-box{
+    margin-top: 23px;
+}
+
 #conteiner {
-    position: absolute;
-    width: 300px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 400px;
     text-align: center;
+}
+
+#dx-avatar{
+    height: 25px;
+    border-radius: 35px;
+    border-style: solid;
+    border-color: #fff;
+    margin-left: .5px;
+}
+
+#dx-nome{ 
+    color: #fff;
+    position: relative;
+    top: 2px;
+    font-size: 19px;
+    font-family: Lato;
+    font-weight: 500;
+    margin-left: 2px;
+
+}
+#dx-cont{
+    display: inline-flex;
+    background-color: #0d5c67;
+    padding: 4px;
+    padding-right: 19px;
+    border-radius: 38px;
+    transition: all .1s ease-in-out ;
+}
+#dx-cont:link{
+    text-decoration: none;
+}
+#dx-cont:hover{
+    background-color: #07404d;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px #0000002b;
+}
+
+#dx-created{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 700;
+    margin-bottom: 6px;
 }
 
 #componets {
     background-color: #09131CCC;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 15px;
+    border-radius: 37px;
+    margin-top: 7px;
+    padding: 35px;
+    padding-top: 13px;
+    backdrop-filter: blur(10px);
 }
 
 
@@ -43,16 +92,49 @@ body {
     display: inline-table;
     padding: 4px 40px 4px 40px;
     border-radius: 10px;
-    transition: background-color .1s ease-in-out ;
-    background-color: #941a80;
+    transition: all .1s ease-in-out ;
+    background-color: #9147ff;
     margin-bottom: 10px;
 }   
 #login-box:hover{
-    background-color: #661659;
+    background-color: #4f24b8;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px #0000002b;
+    
 }
 #login-box:link{
     text-decoration: none;
 }
+
+
+
+
+#paypal-box{
+    display: inline-table;
+    width: 182px;
+    padding: 4px;
+    border-radius: 10px;
+    transition: all .1s ease-in-out ;
+    background-color: #186198;
+    margin-bottom: 10px;
+}   
+#paypal-box:hover{
+    background-color: #134481;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px #0000002b;
+    
+}
+#paypal-box:link{
+    text-decoration: none;
+}
+
+#paypal-logo{
+    height: 27px;
+}
+
+
+
+
 
 
 #twitch-text{
@@ -64,21 +146,31 @@ body {
     font-weight: 300;
 }
 
-#description-box{
-    padding-bottom: 10px;
-}
-
 
 #text{
     color: #fff;
-    font-size: 36px;
+    font-size: 35px;
     font-family: Lato;
     font-weight: 300;
+    display: block;
 }
 
 #description{
+    display: block;
     color: #fff;
-    font-size: 16pxpx;
+    font-size: 16px;
+    font-family: Lato;
+    font-weight: 300;
+    white-space: pre-line;
+    line-height: 19px;
+}
+
+#paypal-description{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 8px;
     font-family: Lato;
     font-weight: 300;
     white-space: pre-line;
