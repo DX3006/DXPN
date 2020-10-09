@@ -20,10 +20,6 @@ var clientId = 'apprklrt7e4tasfoq8rjonw99edjxu';
 var redirectURI = 'https://dx3006.github.io/DXPN/';
 var scope = 'channel_read channel:read:redemptions';
 var ws;
-language = fetch('language.json').then(function (response) {
-    return response.json();
-})
-
 
 
 listaPedidos = []
@@ -245,6 +241,7 @@ function fail() {
 
 
 async function iniciar() {
+    console.log(window.location.href)
     hash=document.location.hash
     if(parseFragment(hash)) {
         if(hash.match(/scope=/)){
