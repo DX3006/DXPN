@@ -1,0 +1,17 @@
+{
+    "en":{
+        "description-name":"Description",
+        "description":"This is a tool that shows notifications for channel points rewards.\nAutomatically receives the image and name of the reward and displays it on your livestream.\n( just add it as a browser source! )",
+        "login-name":"Login",
+        "paypal-description":"If you like this tool please consider leaving a tip below, this is not needed but much appreciated.",
+        "dx-created":"Created by:"
+    },
+    "pt":{
+        "description-name":"Descrição",
+        "description":"Esta é uma ferramenta que mostra notificações das recompensas de pontos do canal. \nRecebe automaticamente a imagem e o nome da recompensa a exibe na livestream. \n ( só precisa adicionar como uma source de navegador! )",
+        "login-name":"Login",
+        "paypal-description":"Se gosta desta ferramenta, por favor, considere deixar uma gorjeta abaixo, isso não é necessário, mas muito ajuda muito.",
+        "dx-created":"Criado por:"
+    }
+
+}
