@@ -234,17 +234,18 @@ async function lista() {
 
 function fail() {
     console.log(authUrl())
-    window.history.pushState("object or string", "Title", window.location.href)
+    window.history.pushState("object or string", "Title", window.location.protocol+"//"+window.location.host+window.location.pathname)
     $('#login-box').attr("href", authUrl());
     $('#login').show()
 }
 
 
 async function iniciar() {
+    console.log(window.location.protocol+"//"+window.location.host+window.location.pathname)
     hash=document.location.hash
     if(parseFragment(hash)) {
         if(hash.match(/scope=/)){
-            window.history.pushState("object or string", "Title", window.location.href+"#access_token="+twitchOAuthToken)
+            window.history.pushState("object or string", "Title",window.location.protocol+"//"+window.location.host+window.location.pathname+"#access_token="+twitchOAuthToken)
         }
         console.log(twitchOAuthToken)
         var h = {
