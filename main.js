@@ -241,11 +241,10 @@ function fail() {
 
 
 async function iniciar() {
-    console.log(window.location.href)
     hash=document.location.hash
     if(parseFragment(hash)) {
         if(hash.match(/scope=/)){
-            //window.history.pushState("object or string", "Title", "/#access_token="+twitchOAuthToken)
+            window.history.pushState("object or string", "Title", window.location.href+"#access_token="+twitchOAuthToken)
         }
         console.log(twitchOAuthToken)
         var h = {
