@@ -234,7 +234,7 @@ async function lista() {
 
 function fail() {
     console.log(authUrl())
-    window.history.pushState("object or string", "Title", "/")
+    window.history.pushState("object or string", "Title", window.location.href)
     $('#login-box').attr("href", authUrl());
     $('#login').show()
 }

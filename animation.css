@@ -29,6 +29,7 @@ body {
 }
 
 #conteiner {
+    margin: 20px;
     display: inline-block;
     width: 400px;
     text-align: center;
