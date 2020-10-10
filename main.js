@@ -18,7 +18,7 @@ var twitchOAuthToken = null;
 var channelId = null;
 var clientId = 'apprklrt7e4tasfoq8rjonw99edjxu';
 var redirectURI = 'https://dx3006.github.io/DXPN/';
-var scope = 'channel_read channel:read:redemptions';
+var scope = 'channel:read:redemptions';
 var ws;
 
 
@@ -241,7 +241,7 @@ function fail() {
 
 
 async function iniciar() {
-    console.log(window.location.protocol+"//"+window.location.host+window.location.pathname)
+    console.log(window.location)
     hash=document.location.hash
     if(parseFragment(hash)) {
         if(hash.match(/scope=/)){
@@ -252,15 +252,14 @@ async function iniciar() {
             method: 'GET',
             headers: {
                 'Accept': 'application/vnd.twitchtv.v5+json',
-                'Client-ID': clientId,
                 'Authorization': 'OAuth ' + twitchOAuthToken
             }
         };
-        const data = await fetch('https://api.twitch.tv/kraken/channel', h).then(function (response) {
+        const data = await fetch('https://api.twitch.tv/kraken', h).then(function (response) {
             return response.json();
         })
-        if (data.status != 401) {
-            channelId = data["_id"];
+        if (data.error == undefined) {
+            channelId = data.token.user_id;
             console.log(channelId)
             $('#animation').show()
             connect()
