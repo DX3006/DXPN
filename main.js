@@ -288,3 +288,4 @@ async function changeLanguage(lang){
 }
 
 iniciar()
+changeLanguage(navigator.language)
