@@ -22,6 +22,7 @@ body {
     background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/b6ee6b06-f8e4-48e4-a0ef-d89da0672a02-profile_banner-480.png);
     background-size: cover;
     background-position: center;
+    display: flex;
 }
 
 #cont-box{
@@ -29,10 +30,12 @@ body {
 }
 
 #conteiner {
-    margin: 20px;
     display: inline-block;
     width: 400px;
     text-align: center;
+    align-self: center;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #dx-avatar{
