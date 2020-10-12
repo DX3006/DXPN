@@ -201,9 +201,9 @@ async function lista() {
                 document.getElementById("acao").innerHTML = title;
                 
                 if (j["data"]["redemption"]["reward"]["image"] == null) {
-                    loadImage(document.getElementById("img"),j["data"]["redemption"]["reward"]["default_image"]["url_4x"])
+                    await loadImage(document.getElementById("img"),j["data"]["redemption"]["reward"]["default_image"]["url_4x"])
                 } else {
-                    loadImage(document.getElementById("img"),j["data"]["redemption"]["reward"]["image"]["url_4x"])
+                    await loadImage(document.getElementById("img"),j["data"]["redemption"]["reward"]["image"]["url_4x"])
                 }
 
 
