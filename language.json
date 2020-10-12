@@ -12,13 +12,6 @@
         "login-name":"Login",
         "paypal-description":"Se gosta desta ferramenta, por favor, considere deixar uma gorjeta abaixo, isso não é necessário, mas muito ajuda muito.",
         "dx-created":"Criado por:"
-    },
-    "es-ES":{
-        "description-name":"descripción",
-        "description":"Esta es una herramienta que muestra notificaciones de recompensas de puntos de canal. \n Recibe automáticamente la imagen y el nombre de la recompensa la muestra en la transmisión en vivo. \n (¡solo es necesario agregarlo como fuente del navegador!)",
-        "login-name":"Login",
-        "paypal-description":"Se gosta desta ferramenta, por favor, considere deixar uma gorjeta abaixo, isso não é necessário, mas muito ajuda muito.",
-        "dx-created":"Criado por:"
     }
 
 }

@@ -161,6 +161,18 @@ function hexIsLightColor(hex){
 }
 
 
+function loadImage(elen,img) {
+    return new Promise((resolve, reject) => {
+      elen.onload = function () {
+        resolve()
+      }
+      elen.src =img;
+  
+    })
+  }
+  
+  
+
 async function lista() {
     while (true) {
         /* console.log("rodou"); */
@@ -189,9 +201,9 @@ async function lista() {
                 document.getElementById("acao").innerHTML = title;
                 
                 if (j["data"]["redemption"]["reward"]["image"] == null) {
-                    document.getElementById("img").src = j["data"]["redemption"]["reward"]["default_image"]["url_4x"]
+                    loadImage(document.getElementById("img"),j["data"]["redemption"]["reward"]["default_image"]["url_4x"])
                 } else {
-                    document.getElementById("img").src = j["data"]["redemption"]["reward"]["image"]["url_4x"]
+                    loadImage(document.getElementById("img"),j["data"]["redemption"]["reward"]["image"]["url_4x"])
                 }
 
 
