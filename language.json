@@ -6,7 +6,7 @@
         "paypal-description":"If you like this tool please consider leaving a tip below, this is not needed but much appreciated.",
         "dx-created":"Created by:",
         "fail-name":"Your token has expired",
-        "fail-description":"to fix it you need to enter in this link <a class='link' href='dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> in your browser.\nLogin again and replace the url in OBS/StreamLabs"
+        "fail-description":"to fix it you need to enter in this link <a class='link' href='https://dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> in your browser.\nLogin again and replace the url in OBS/StreamLabs"
     },
     "pt-BR":{
         "description-name":"Descrição",
@@ -15,7 +15,7 @@
         "paypal-description":"Se gosta desta ferramenta, por favor, considere deixar uma gorjeta abaixo, isso não é necessário, mas ajuda muito.",
         "dx-created":"Criado por:",
         "fail-name":"Seu token expirou",
-        "fail-description":"para arrumar você precisa entrar nesse link <a class='link' href='dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> em seu navegador.\nRealizar o login denovo e substituir a url no OBS/StreamLabs"
+        "fail-description":"para arrumar você precisa entrar nesse link <a class='link' href='https://dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> em seu navegador.\nRealizar o login denovo e substituir a url no OBS/StreamLabs"
     }
 
 }
