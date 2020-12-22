@@ -4,14 +4,18 @@
         "description":"This is a tool that shows notifications for channel points rewards.\nAutomatically receives the image and name of the reward and displays it on your livestream.\n( just add it as a browser source! )",
         "login-name":"Login",
         "paypal-description":"If you like this tool please consider leaving a tip below, this is not needed but much appreciated.",
-        "dx-created":"Created by:"
+        "dx-created":"Created by:",
+        "fail-name":"Your token has expired",
+        "fail-description":"to fix it you need to enter in this link <a class='link' href='dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> in your browser.\nLogin again and replace the url in OBS/StreamLabs"
     },
     "pt-BR":{
         "description-name":"Descrição",
         "description":"Esta é uma ferramenta que mostra notificações das recompensas de pontos do canal. \nRecebe automaticamente a imagem e o nome da recompensa a exibe na livestream. \n ( só precisa adicionar como uma source de navegador! )",
         "login-name":"Login",
         "paypal-description":"Se gosta desta ferramenta, por favor, considere deixar uma gorjeta abaixo, isso não é necessário, mas ajuda muito.",
-        "dx-created":"Criado por:"
+        "dx-created":"Criado por:",
+        "fail-name":"Seu token expirou",
+        "fail-description":"para arrumar você precisa entrar nesse link <a class='link' href='dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> em seu navegador.\nRealizar o login denovo e substituir a url no OBS/StreamLabs"
     }
 
 }

@@ -247,8 +247,15 @@ async function lista() {
 function fail() {
     console.log(authUrl())
     window.history.pushState("object or string", "Title", window.location.protocol+"//"+window.location.host+window.location.pathname)
-    $('#login-box').attr("href", authUrl());
+    $('.login-box').attr("href", authUrl());
     $('#login').show()
+}
+
+function tfail() {
+    console.log(authUrl())
+    //window.history.pushState("object or string", "Title", window.location.protocol+"//"+window.location.host+window.location.pathname)
+    $('.login-box').attr("href", authUrl());
+    $('#fail').show()
 }
 
 
@@ -279,7 +286,7 @@ async function iniciar() {
 
         } else {
             console.log("fail")
-            fail();
+            tfail();
         }
     } else {
         fail();

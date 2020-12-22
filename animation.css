@@ -24,6 +24,14 @@ body {
     background-position: center;
     display: flex;
 }
+#fail{
+    text-align: center;
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
 
 #cont-box{
     margin-top: 23px;
@@ -94,7 +102,7 @@ body {
 }
 
 
-#login-box{
+.login-box{
     display: inline-table;
     padding: 4px 40px 4px 40px;
     border-radius: 10px;
@@ -102,13 +110,13 @@ body {
     background-color: #9147ff;
     margin-bottom: 10px;
 }   
-#login-box:hover{
+.login-box:hover{
     background-color: #4f24b8;
     transform: scale(1.05);
     box-shadow: 0px 4px 10px #0000002b;
     
 }
-#login-box:link{
+.login-box:link{
     text-decoration: none;
 }
 
@@ -161,7 +169,7 @@ body {
     display: block;
 }
 
-#description{
+.description{
     display: block;
     color: #fff;
     font-size: 16px;
@@ -169,6 +177,9 @@ body {
     font-weight: 300;
     white-space: pre-line;
     line-height: 19px;
+}
+.link{
+    color: #ba7dff;
 }
 
 #paypal-description{
