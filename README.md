@@ -28,5 +28,5 @@
 # Contributing
 > If you would like to contribute and accelerate the development of this tool, consider making a donation.
 > 
-> [ ![logo](https://i.imgur.com/Rg2aYdv.png ) ](https://dx3006.github.io/DXPN/)
+> [ ![Paypal]( /paypal_button.png ) ](https://dx3006.github.io/DXPN/)
 
