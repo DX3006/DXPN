@@ -19,7 +19,7 @@ body {
     min-height: 100vh;
     height: auto;
     background-color: blueviolet;
-    background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/b6ee6b06-f8e4-48e4-a0ef-d89da0672a02-profile_banner-480.png);
+    background-image: url(images/banner.png);
     background-size: cover;
     background-position: center;
     display: flex;
