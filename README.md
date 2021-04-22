@@ -1,4 +1,5 @@
-![logo]( /DXPN_ReadMe.png )
+![logo]( /DXPN_ReadMe.png ) 
+
 
 # DXPoints Notification
 
@@ -6,7 +7,7 @@
 > 
 > It will automatically receive any reward's name, image and color, and display a notification when it's redeemed on your livestream.
 
- 
+ ![logo]( /animation_preview.png ) 
 
 # How to use
 > 1. Enter on the [page of the tool](https://dx3006.github.io/DXPN/) and log with twitch account
