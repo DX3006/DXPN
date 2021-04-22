@@ -9,7 +9,7 @@
  ![logo]( images/readme/animation_preview.png ) 
  
 # How to use
-> 1. Enter on the [page of the tool](https://dx3006.github.io/DXPN/) and loging with your twitch account
+> 1. Enter on the [page of the tool](https://dx3006.github.io/DXPN/) and login with your twitch account
 > 
 > 2. After the login you will be redirected to a **blank screen**, this means that login was successful
 > 
