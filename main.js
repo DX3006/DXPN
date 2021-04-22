@@ -255,6 +255,7 @@ function tfail() {
     console.log(authUrl())
     //window.history.pushState("object or string", "Title", window.location.protocol+"//"+window.location.host+window.location.pathname)
     $('.login-box').attr("href", authUrl());
+    $('#login').hide()
     $('#fail').show()
 }
 
