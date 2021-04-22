@@ -18,7 +18,7 @@
 
 # Planned features
 
-> - [ ] settings screen to accommodate the options
+> - [ ] Settings screen to accommodate the options
 > - [ ] Add a custom sound to the notification
 > - [ ] Option to override the default color by placing a single color for all rewards
 > - [ ] Option to block notification of specific rewards
