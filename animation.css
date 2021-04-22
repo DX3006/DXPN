@@ -83,7 +83,7 @@ body {
     box-shadow: 0px 4px 10px #0000002b;
 }
 
-#dx-created{
+.dx-created{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -182,7 +182,7 @@ body {
     color: #ba7dff;
 }
 
-#paypal-description{
+.paypal-description{
     display: block;
     color: #fff;
     font-size: 14px;

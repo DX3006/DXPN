@@ -298,10 +298,14 @@ async function changeLanguage(lang){
     language = await fetch('language.json').then(function (response) {
         return response.json();
     })    
-    if(language[lang]!=undefined){
-        key=Object.keys(language[lang])
-        for(c=0;c<key.length;c++){
-            document.getElementById(key[c]).innerHTML=language[lang][key[c]]
+    if(language[lang]==undefined){
+        lang="en-US"
+    }
+    key=Object.keys(language[lang])
+    for(c1=0;c1<key.length;c1++){
+        comp=document.getElementsByClassName(key[c1])
+        for(c2=0;c2<comp.length;c2++){
+            comp[c2].innerHTML=language[lang][key[c1]]
         }
     }
 }
