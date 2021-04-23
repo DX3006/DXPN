@@ -6,7 +6,7 @@
 > 
 > It will automatically receive any rewards name, image and color, and display a notification when it's redeemed on your livestream.
 
- ![logo]( images/readme/animation_preview.png ) 
+ ![animation]( images/readme/animation_preview.png ) 
  
 # How to use
 > 1. Log into [this page](https://dx3006.github.io/DXPN/) with your twitch account
