@@ -9,17 +9,21 @@
  ![logo]( images/readme/animation_preview.png ) 
  
 # How to use
-> 1. Enter on the [page of the tool](https://dx3006.github.io/DXPN/) and login with your twitch account
+> 1. Log into [this page](https://dx3006.github.io/DXPN/) with your twitch account
 > 
-> 2. After the login you will be redirected to a **blank screen**, this means that login was successful
+> 2. After Logging in you will be redirected to a **blank screen**, this means that login was successful
 > 
 > 3. Take the **url** of this page and put it in a browser source in **OBS/StreamLabs**
 
 
-# Planned features
+# Features
 
+> - [x] Reward notification system
+> - [x] Anti-spam system for rewards
+> - [x] Dynamic color, image and name for rewards
+> - [x] Sound effect for notification
 > - [ ] Settings screen to accommodate the options
-> - [ ] Add a custom sound to the notification
+> - [ ] Add a custom sound effect to notification
 > - [ ] Option to override the default color by placing a single color for all rewards
 > - [ ] Option to block notification of specific rewards
 > - [ ] TTS(text to speech) reward
