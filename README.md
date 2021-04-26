@@ -14,7 +14,8 @@
 > 2. After Logging in you will be redirected to a **blank screen**, this means that login was successful.
 > 
 > 3. Buy something with the channel point to view the notification animation​.
-> ![animation]( images/readme/animation_preview.png ) 
+> > 
+> > ![animation]( images/readme/animation_preview.png ) 
 >
 > 4. Take the **url** of this page and put it in a browser source in **OBS/StreamLabs**.
 
