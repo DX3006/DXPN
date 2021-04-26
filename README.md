@@ -6,14 +6,17 @@
 > 
 > It will automatically receive any rewards name, image and color, and display a notification when it's redeemed on your livestream.
 
- ![animation]( images/readme/animation_preview.png ) 
+
  
 # How to use
-> 1. Log into [this page](https://dx3006.github.io/DXPN/) with your twitch account
+> 1. Log into [this page](https://dx3006.github.io/DXPN/) with your twitch account.
 > 
-> 2. After Logging in you will be redirected to a **blank screen**, this means that login was successful
+> 2. After Logging in you will be redirected to a **blank screen**, this means that login was successful.
 > 
-> 3. Take the **url** of this page and put it in a browser source in **OBS/StreamLabs**
+> 3. Buy something with the channel point to view the notification animation​.
+> ![animation]( images/readme/animation_preview.png ) 
+>
+> 4. Take the **url** of this page and put it in a browser source in **OBS/StreamLabs**.
 
 
 # Features
