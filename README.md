@@ -34,6 +34,8 @@
 > - [ ] Have a reward that let your viewers play sound effects on your livestream
 
 # Contributing
+> Thanks to [Lunakchay](https://www.twitch.tv/lunakchay) for translating the tool into spanish
+> 
 > If you would like to contribute and accelerate the development of this tool, consider making a donation.
 > 
 > [ ![Paypal]( images/readme/paypal_button.png ) ](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7G2SFFMS46ZZ8)

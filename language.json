@@ -1,5 +1,5 @@
 {
-    "en-US":{
+    "en":{
         "description-name":"Description",
         "description-main":"This is a tool that shows notifications for channel points rewards.\nIt will automatically receive any reward's name and image, and display a notification when it's redeemed on your livestream.\n( just add it as a browser source! )",
         "login-name":"Login",
@@ -8,7 +8,7 @@
         "fail-name":"Your token has expired",
         "fail-description":"to fix it you need to enter this link <a class='link' href='https://dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> in your browser.\nLogin again and replace the url for the browser source in OBS/StreamLabs"
     },
-    "pt-BR":{
+    "pt":{
         "description-name":"Descrição",
         "description-main":"Esta é uma ferramenta que mostra notificações das recompensas de pontos do canal. \nEla recebe automaticamente a imagem e o nome da recompensa a exibe quando é resgatada na livestream. \n ( só precisa adicionar como uma source de navegador! )",
         "login-name":"Login",
@@ -16,6 +16,15 @@
         "dx-created":"Criado por:",
         "fail-name":"Seu token expirou",
         "fail-description":"para arrumar você precisa entrar nesse link <a class='link' href='https://dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> em seu navegador.\nRealizar o login novamente e substituir a url de sua Browser Source no OBS/StreamLabs"
+    },
+	"es":{
+        "description-name":"Descripción",
+        "description-main":"Con esta herramienta podrás mostrar una alerta de notificación en tu canal cuando un usuario canjee puntos de canal.\nLa alerta emitirá un pop up con el canjeo, una animación y un breve sonido, mostrando el nombre del punto de canal, quién lo canjeó y la imagen en tu live stream.",
+        "login-name":"Ingresar",
+        "paypal-description":"Si consideras que esta herramienta es buena y te gustó puedes voluntariamente donar lo que gustes en PayPal, no es obligatorio pero ayudará mucho",
+        "dx-created":"Creado por:",
+        "fail-name":"Ha expirado tu token",
+        "fail-description":"Si tienes algún priblema con el token o no funciona debes ingresar este link <a class='link' href='https://dx3006.github.io/DXPN/'>dx3006.github.io/DXPN/</a> en tu navegador. Ingresa de nuevo y reemplaza la url o link por el nuevo en tu fuente de obs/streamlabs"
     }
 
 }
