@@ -299,9 +299,12 @@ async function changeLanguage(lang){
     language = await fetch('language.json').then(function (response) {
         return response.json();
     })
-    lang=lang.split("-")[0]    
+    
     if(language[lang]==undefined){
-        lang="en"
+        lang=lang.split("-")[0]    
+        if(language[lang]==undefined){ 
+            lang="en"
+        }
     }
     key=Object.keys(language[lang])
     for(c1=0;c1<key.length;c1++){

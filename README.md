@@ -33,8 +33,8 @@
 > - [ ] TTS(text to speech) reward
 > - [ ] Have a reward that let your viewers play sound effects on your livestream
 
-# Contributing
-> Thanks to [Lunakchay](https://www.twitch.tv/lunakchay) for translating the tool into spanish
+# contributions
+> Thanks to [Lunakchay](https://www.twitch.tv/lunakchay) for translating the tool to spanish
 > 
 > If you would like to contribute and accelerate the development of this tool, consider making a donation.
 > 
