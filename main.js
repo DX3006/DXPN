@@ -271,15 +271,14 @@ async function iniciar() {
         var h = {
             method: 'GET',
             headers: {
-                'Accept': 'application/vnd.twitchtv.v5+json',
-                'Authorization': 'OAuth ' + twitchOAuthToken
+                'Authorization': 'Bearer ' + twitchOAuthToken
             }
         };
-        const data = await fetch('https://api.twitch.tv/kraken', h).then(function (response) {
+        const data = await fetch('https://id.twitch.tv/oauth2/validate', h).then(function (response) {
             return response.json();
         })
         if (data.error == undefined) {
-            channelId = data.token.user_id;
+            channelId = data.user_id;
             console.log(channelId)
             $('#animation').show()
             connect()
