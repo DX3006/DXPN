@@ -39,7 +39,7 @@ function parseFragment(hash) {
 
 function authUrl() {
     sessionStorage.twitchOAuthState = nonce(15);
-    var url = 'https://api.twitch.tv/kraken/oauth2/authorize' +
+    var url = 'https://id.twitch.tv/oauth2/authorize' +
         '?response_type=token' +
         '&client_id=' + clientId +
         '&redirect_uri=' + redirectURI +
