@@ -4,6 +4,16 @@
     --aniMid: 3s;
 }
 
+/* Estilo para a mensagem de habilitação de áudio */
+#audio-enable-message {
+    transition: all 0.3s ease-in-out;
+}
+
+#audio-enable-message:hover {
+    background-color: rgba(100, 65, 165, 0.9) !important; /* Roxo da Twitch quando hover */
+    transform: translateX(-50%) scale(1.05) !important;
+}
+
 
 body {
     margin: 0px;
